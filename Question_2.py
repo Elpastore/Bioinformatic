@@ -46,7 +46,8 @@ def extract_genotype_info(vcf_file_path, output_csv_path, output_html_path):
     
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(output_csv_path)
-    
+    print("genotype info:")
+    print(df)
     # Save the DataFrame to an HTML file
     df.to_html(output_html_path, index=False)
 
@@ -94,7 +95,8 @@ def extract_allelic_depth_info(vcf_file_path, output_csv_path, output_html_path)
     
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(output_csv_path)
-    
+    print(allelic depth info)
+    print(df)
     # Save the DataFrame to an HTML file
     df.to_html(output_html_path, index=False)
     
@@ -163,7 +165,8 @@ def phase_genotypes(vcf_file_path, output_csv_path, output_html_path):
     phased_genotypes_df = pd.DataFrame(phased_genotypes, columns=sample_ids)
     
     output_df = pd.concat([pd.DataFrame(data), phased_genotypes_df], axis=1)
-    
+    print(Phased genotype formated)
+    print(output_df)
     # Save to a CSV file
     output_df.to_csv(output_csv_path, index=False)
     
