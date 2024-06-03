@@ -7,4 +7,6 @@ Before execution python program make sure having these following file in the sam
 	- Question_1.py
 	- Question_2.py
 
+IMPORTANT: python file must be run using ==> python3 <file_name.py>
+
 Thank you for your feeback :) !
